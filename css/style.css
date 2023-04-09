@@ -124,8 +124,6 @@ body {
   text-align: center;
   padding: 100px 0 0 0;
 }
-.about_section .section_heading {
-}
 .section_heading {
   width: 100%;
   font-size: 55px;
@@ -333,6 +331,7 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   padding: 40px 0;
+  align-items: center;
 }
 .news .section_heading {
   margin: 40px 0;
@@ -355,7 +354,12 @@ body {
   padding: 25px;
   text-align-last: left;
 }
-
+.more-btn {
+  text-align: center;
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+}
 .news__content {
   border: 1px solid white;
   border-left: none;
@@ -529,6 +533,44 @@ hr {
   background-color: #1a191b;
   color: white;
   transform: rotateY(180deg);
+}
+
+.partner {
+  margin: 60px 0;
+  text-align: center;
+  background-color: #fff76a;
+  color: black;
+  height: 300px;
+}
+.partner .section_heading {
+  padding: 20px 0;
+  color: black;
+  margin: 0;
+}
+.partner .secondary_heading {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.partner_btn {
+  margin: 20px 5px;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.btn-yellow,
+.btn-black:hover {
+  color: black;
+  background-color: #00000000;
+}
+.btn-black,
+.btn-yellow:hover {
+  background-color: #000;
+  color: #fff76a;
 }
 .prosta {
   height: 200vh;
