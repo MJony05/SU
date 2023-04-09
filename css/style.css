@@ -192,6 +192,26 @@ body {
   background-color: rgba(0, 0, 0, 0.275);
   z-index: 11;
 }
+
+.brand_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.brand_img-box {
+  width: 100%;
+  height: 100%;
+}
+.brand_img_box img {
+  width: 90%;
+}
+
+.brand_info {
+  text-align: left;
+  font-size: 20px;
+}
 .content_title {
   color: #fff76a;
   font-size: 30px;
