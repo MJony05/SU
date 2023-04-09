@@ -74,7 +74,9 @@ body {
   color: #fff;
   margin-left: 10px;
 }
-
+.navbar1__link:hover {
+  color: #fff76a;
+}
 .title {
   width: 100%;
   display: flex;
@@ -98,10 +100,11 @@ body {
   color: #000;
   font-weight: 600;
   transition: 0.2s;
+  border: 1px solid #fff76a;
 }
-
 .subtitle__btn:hover {
-  background-color: #fff76a;
+  background-color: rgba(245, 222, 179, 0);
+  color: #fff76a;
 }
 
 /* FOOTER */
@@ -205,7 +208,7 @@ body {
   height: 100%;
 }
 .brand_img_box img {
-  width: 90%;
+  width: 100%;
 }
 
 .brand_info {
@@ -251,7 +254,7 @@ body {
 
 .team {
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.567);
   padding-bottom: 50px;
 }
 .team .section_heading {
@@ -267,9 +270,14 @@ body {
 .team_card {
   width: 100%;
   background-color: #1a191b;
+  border-radius: 10px;
 }
 .team_card img {
   width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 300px;
+  border-radius: 10px;
 }
 .card_desc {
   padding: 20px;
@@ -280,18 +288,31 @@ body {
 }
 .card_name {
   font-size: 20px;
+  margin: 10px 0;
+}
+.card_major {
+  font-size: 14px;
+  font-weight: 500;
 }
 .card_about {
   font-size: 14px;
   line-height: 1.5;
   margin: 15px 0;
+  font-weight: 300;
+  text-align: justify;
 }
 .card_contact {
-  color: black;
   display: flex;
   gap: 10px;
   font-size: 20px;
   transition: 0.5;
+}
+.card_contact a {
+  color: black;
+  text-decoration: none;
+}
+.card_contact a:hover {
+  color: #fff76a;
 }
 .card_contact i:hover,
 .card_position {
