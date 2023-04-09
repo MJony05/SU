@@ -262,7 +262,7 @@ body {
   padding-bottom: 50px;
 }
 .team .section_heading {
-  padding: 80px 0;
+  padding: 80px 0 30px 0;
 }
 
 .team_content {
@@ -285,7 +285,13 @@ body {
 }
 .card_desc {
   padding: 20px;
+  height: calc(100% - 300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
+
 .card_position {
   font-size: 20px;
   font-weight: 300;
@@ -493,11 +499,15 @@ hr {
 }
 .flip-card {
   background-color: transparent;
-  height: 200px;
+  height: 300px;
   perspective: 1000px;
 }
 .flip-card img {
+  object-fit: cover;
   height: 100%;
+}
+.coming-soon {
+  opacity: 0.5;
 }
 .flip-card-inner {
   position: relative;
@@ -572,7 +582,15 @@ hr {
   background-color: #000;
   color: #fff76a;
 }
-
+.contact {
+  padding-top: 80px 0;
+}
+.contact .section_heading {
+  margin-bottom: 50px;
+}
+.form-heading {
+  font-size: 24px;
+}
 .contact-content {
   text-align: center;
   display: grid;
@@ -581,6 +599,7 @@ hr {
   align-items: center;
 }
 .contact-details {
+  margin: 0 auto;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -591,6 +610,13 @@ hr {
 .contact-details .title {
   font-size: 20px;
   color: #fff76a;
+}
+.contact-details .number {
+  width: 30%;
+  text-align: center;
+}
+.contact-details .info {
+  font-weight: 300;
 }
 .input-rows {
   display: grid;
@@ -626,6 +652,10 @@ input:focus {
 textarea {
   resize: none;
 }
-.c .prosta {
-  height: 200vh;
+.footerr {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 0 10px 0;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
 }
