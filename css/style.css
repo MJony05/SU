@@ -116,9 +116,12 @@ body {
 /* ABOUT */
 
 .about_section {
-  background: rgba(0, 0, 0, 0.212);
+  background: rgba(0, 0, 0, 0.416);
   width: 100%;
   text-align: center;
+  padding: 100px 0 0 0;
+}
+.about_section .section_heading {
 }
 .section_heading {
   width: 100%;
@@ -129,12 +132,21 @@ body {
   text-decoration: none;
 }
 .about_content {
-  height: 100vh;
-  padding: 100px 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
   margin: 0 auto;
-  text-align: center;
+  align-items: center;
+  gap: 30px;
+}
+.about-text {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 2;
+  padding: 50px 20px;
+}
+.about_content img {
+  width: 100%;
 }
 .regulations_content {
   height: 100vh;
