@@ -144,15 +144,53 @@ body {
   text-align: justify;
   line-height: 2;
   padding: 50px 20px;
-  text-shadow: 0px 2px 4px #fff76a;
+  text-shadow: 0px 1px 3px #fff76a;
 }
 .about_content img {
   width: 100%;
 }
 .regulations_content {
-  height: 100vh;
   text-align: center;
   padding: 100px 0;
+}
+.regulation_text,
+.regulation_more {
+  width: 75%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+}
+.regulation_more {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.regulation_more a {
+  color: #fff76a;
+}
+.regulations_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.regulation_img {
+  padding-left: 10px;
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+}
+.regulation_image {
+  width: 100%;
+}
+.regulation_img::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.275);
+  z-index: 11;
 }
 .content_title {
   color: #fff76a;
@@ -190,6 +228,7 @@ body {
 .carousel-control-next-icon {
   filter: invert(100%);
 }
+
 .team {
   color: white;
   background-color: black;
