@@ -135,12 +135,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 30px auto;
   align-items: center;
   gap: 30px;
 }
 .about-text {
-  font-size: 20px;
+  font-size: 22px;
   text-align: justify;
   line-height: 2;
   padding: 50px 20px;
