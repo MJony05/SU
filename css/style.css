@@ -125,8 +125,8 @@ body {
 }
 .section_heading {
   width: 100%;
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 600;
   color: #fff76a;
   text-align: center;
   text-decoration: none;
@@ -135,7 +135,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
-  margin: 30px auto;
+  margin: 40px auto;
   align-items: center;
   gap: 30px;
 }
@@ -144,6 +144,7 @@ body {
   text-align: justify;
   line-height: 2;
   padding: 50px 20px;
+  text-shadow: 0px 2px 4px #fff76a;
 }
 .about_content img {
   width: 100%;
@@ -154,11 +155,13 @@ body {
   padding: 100px 0;
 }
 .content_title {
+  color: #fff76a;
   font-size: 30px;
 }
 
 .goals_content {
   background-color: #fff76a;
+  height: 250px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -170,19 +173,19 @@ body {
 }
 .goals_content .section_heading {
   color: black;
+  font-size: 36px;
+  font-weight: 600;
 }
 .second_heading {
-  font-size: 25px;
+  margin: 10px 0;
+  font-size: 22px;
 }
 .content_text {
   margin: 20px auto;
 
-  width: 55%;
+  width: 70%;
 }
-.goal_author {
-  font-size: 14px;
-  font-weight: 600;
-}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(100%);
