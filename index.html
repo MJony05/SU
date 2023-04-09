@@ -13,13 +13,37 @@
       href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@5.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Home Page</title>
   </head>
 
   <body>
     <div class="navbar">
-      <div class="container">
+      <div class="containerr">
         <div class="nav1">
           <div class="nav1__logo">
             <img class="logo" src="./img/logo.svg" />
@@ -29,9 +53,9 @@
               <a class="navbar1__btn" href="">Home</a>
               <a class="navbar1__btn" href="#about">About</a>
               <a class="navbar1__btn" href="#team">Team</a>
-              <a class="navbar1__btn" href="">News</a>
+              <a class="navbar1__btn" href="#news">News</a>
               <a class="navbar1__btn" href="#service">Clubs</a>
-              <a class="navbar1__btn" href="">Contact</a>
+              <a class="navbar1__btn" href="#contact">Contact</a>
             </div>
             <div class="navbar_icon">
               <a class="navbar1__link" href="" target="_blank"
@@ -46,7 +70,7 @@
       </div>
     </div>
     <main class="header">
-      <div class="container">
+      <div class="containerr">
         <div class="title">
           <h2 class="header_text">Change for the better!</h2>
           <a class="subtitle__btn" href="">What we do</a>
@@ -55,7 +79,7 @@
     </main>
 
     <section class="about_section" id="about">
-      <div class="container">
+      <div class="containerr">
         <div class="about_content">
           <h2 class="section_heading">ABOUT US</h2>
           <p class="about-text">We are community for students for students</p>
@@ -69,20 +93,73 @@
           </p>
         </div>
         <div class="goals_content">
-          <div class="section_heading">Our goals</div>
-          <p class="second_heading">Everthing I expected, and more</p>
-          <p class="content_text">
-            “I'm a testimonial. Click to edit me and add text that says
-            something nice about you and your services. Let your customers
-            review you and tell their friends how great you are.”
-          </p>
-          <p class="author">Anny Shaw</p>
+          <div class="goals" id="testimonials">
+            <h1 class="section_heading">Our goal</h1>
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h2 class="second_heading">Everything I expect, and more</h2>
+                  <p class="content_text">
+                    “I'm a testimonial. Click to edit me and add text that says
+                    something nice about you and your services. Let your
+                    customers review you and tell their friends how great you
+                    are.”
+                  </p>
+                  <p class="goal_author">Anny Shaw</p>
+                </div>
+                <div class="carousel-item">
+                  <h2 class="second_heading">Everything I expect, and more</h2>
+                  <p class="content_text">
+                    “I'm a testimonial. Click to edit me and add text that says
+                    something nice about you and your services. Let your
+                    customers review you and tell their friends how great you
+                    are.”
+                  </p>
+                  <p class="goal_author">Anny Shaw</p>
+                </div>
+                <div class="carousel-item">
+                  <h2 class="second_heading">Everything I expect, and more</h2>
+                  <p class="content_text">
+                    “I'm a testimonial. Click to edit me and add text that says
+                    something nice about you and your services. Let your
+                    customers review you and tell their friends how great you
+                    are.”
+                  </p>
+                  <p class="goal_author">Anny Shaw</p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev controller"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon topper"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon topper"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="team" id="team">
-      <div class="container">
+      <div class="containerr">
         <div class="section_heading">Meet The Team</div>
         <div class="team_content">
           <div class="team_card">
@@ -196,10 +273,120 @@
         </div>
       </div>
     </section>
-
+    <section class="news" id="news">
+      <p class="section_heading">NEWS</p>
+      <div class="news__row">
+        <div class="news__img">
+          <img src="./img/new1.png" alt="" class="news__pics" />
+        </div>
+        <div class="news__content">
+          <div class="news__profile">
+            <div class="profile">
+              <div class="profile__img">
+                <img src="./img/new1.png" alt="" class="profile__pic" />
+              </div>
+              <div class="profile__content">
+                <div class="profile__name">Asadbek Sindarov</div>
+                <div class="profile__time">1 minute ago</div>
+              </div>
+            </div>
+            <div class="team__info">
+              <a class="info__icon" href=""
+                ><i class="fi fi-br-menu-dots-vertical"></i
+              ></a>
+            </div>
+          </div>
+          <div class="news__text">
+            <h3 class="news__title">Now You Can Blog from Everywhere</h3>
+            <p class="news__p">
+              We've made it quick and convenient for you to manage your blog
+              from anywhere. In this blog post, we'll share the ways you can
+              post to...
+            </p>
+          </div>
+          <hr />
+          <div class="news__respond">
+            <p class="news__comment"><span>0 views</span>0 comment</p>
+            <div class="news__icon"><i class="fi fi-rs-heart"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="news__row">
+        <div class="news__img">
+          <img src="./img/new1.png" alt="" class="news__pics" />
+        </div>
+        <div class="news__content">
+          <div class="news__profile">
+            <div class="profile">
+              <div class="profile__img">
+                <img src="./img/new1.png" alt="" class="profile__pic" />
+              </div>
+              <div class="profile__content">
+                <div class="profile__name">Asadbek Sindarov</div>
+                <div class="profile__time">1 minute ago</div>
+              </div>
+            </div>
+            <div class="team__info">
+              <a class="info__icon" href=""
+                ><i class="fi fi-br-menu-dots-vertical"></i
+              ></a>
+            </div>
+          </div>
+          <div class="news__text">
+            <h3 class="news__title">Now You Can Blog from Everywhere</h3>
+            <p class="news__p">
+              We've made it quick and convenient for you to manage your blog
+              from anywhere. In this blog post, we'll share the ways you can
+              post to...
+            </p>
+          </div>
+          <hr />
+          <div class="news__respond">
+            <p class="news__comment"><span>0 views</span>0 comment</p>
+            <div class="news__icon"><i class="fi fi-rs-heart"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="news__row">
+        <div class="news__img">
+          <img src="./img/new1.png" alt="" class="news__pics" />
+        </div>
+        <div class="news__content">
+          <div class="news__profile">
+            <div class="profile">
+              <div class="profile__img">
+                <img src="./img/new1.png" alt="" class="profile__pic" />
+              </div>
+              <div class="profile__content">
+                <div class="profile__name">Asadbek Sindarov</div>
+                <div class="profile__time">1 minute ago</div>
+              </div>
+            </div>
+            <div class="team__info">
+              <a class="info__icon" href=""
+                ><i class="fi fi-br-menu-dots-vertical"></i
+              ></a>
+            </div>
+          </div>
+          <div class="news__text">
+            <h3 class="news__title">Now You Can Blog from Everywhere</h3>
+            <p class="news__p">
+              We've made it quick and convenient for you to manage your blog
+              from anywhere. In this blog post, we'll share the ways you can
+              post to...
+            </p>
+          </div>
+          <hr />
+          <div class="news__respond">
+            <p class="news__comment"><span>0 views</span>0 comment</p>
+            <div class="news__icon"><i class="fi fi-rs-heart"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="service" id="service">
       <div class="section_heading">Our Service</div>
-      <div class="container">
+      <div class="containerr">
         <div class="service_content">
           <div class="service_card">
             <div class="club_img">

@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
-.container {
+body .containerr {
   width: 90%;
   margin: 0 auto;
 }
@@ -28,11 +28,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.containers {
-  position: relative;
-  z-index: 1;
 }
 
 /* NAVBAR */
@@ -168,7 +163,17 @@ body {
   font-size: 25px;
 }
 .content_text {
+  margin: 20px auto;
+
   width: 55%;
+}
+.goal_author {
+  font-size: 14px;
+  font-weight: 600;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
 }
 .team {
   color: white;
@@ -177,7 +182,6 @@ body {
 }
 .team .section_heading {
   padding: 80px 0;
-  color: white;
 }
 
 .team_content {
@@ -220,6 +224,116 @@ body {
   color: #fff76a;
 }
 
+/*news */
+
+.news {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px 0;
+}
+.news .section_heading {
+  margin: 40px 0;
+}
+.news__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+}
+.news__img {
+  width: 100%;
+  height: 100%;
+}
+.news__img img {
+  width: 100%;
+  height: 100%;
+}
+.news__post {
+  margin-left: 25px;
+  padding: 25px;
+  text-align-last: left;
+}
+
+.news__content {
+  border: 1px solid white;
+  border-left: none;
+  padding: 15px 0;
+  background-color: #0000006f;
+}
+
+.news__profile {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+}
+.profile__time {
+  font-size: 13px;
+  font-weight: 300;
+}
+.info__icon {
+  text-decoration: none;
+  color: #fff;
+}
+
+.profile__pic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.news__text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.news__title {
+  margin: 14px 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.news__p {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.news__respond {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.news__comment {
+  font-size: 13px;
+}
+.news__comment span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.fi-rs-heart {
+  font-size: 15px;
+  color: red;
+}
+
+/*service*/
 .service {
   padding-top: 80px;
 }
