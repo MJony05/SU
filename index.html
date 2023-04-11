@@ -697,23 +697,33 @@
             <h3 class="form-heading">
               Feel free to write your questions or suggestions
             </h3>
-            <form action="" class="contact-inputs">
+            <form class="contact-inputs" name="contact" netlify>
               <div class="input-rows">
-                <input type="text" placeholder="FirstName" required />
-                <input type="text" placeholder="LastName" required />
+                <input
+                  type="text"
+                  name="fname"
+                  placeholder="FirstName"
+                  required
+                />
+                <input
+                  type="text"
+                  name="lname"
+                  placeholder="LastName"
+                  required
+                />
               </div>
               <div class="input-rows">
                 <input
                   type="email"
                   placeholder="Email"
                   required
-                  name=""
+                  name="email"
                   id=""
                 />
                 <input type="text" placeholder="Subject" />
               </div>
               <textarea
-                name=""
+                name="message"
                 placeholder="Leave us Message"
                 id=""
                 cols="5"
